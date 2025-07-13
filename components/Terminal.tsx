@@ -41,20 +41,35 @@ const Terminal: React.FC<TerminalProps> = ({ command }) => {
   }, [command]);
 
   const fullText = isAIGhost ? content[0] : content.join('\n');
-  const typingSpeed = isSpedUp ? 1 : 10;
+  const typingSpeed = isSpedUp ? 0 : 10;
   const typedText = useTypewriter(isAIGhost || !animationReady ? '' : fullText, typingSpeed);
   
   const isTyping = !isAIGhost && animationReady && typedText.length < fullText.length;
 
-  const handleMouseDown = () => {
-    if (isTyping) {
-      setIsSpedUp(true);
-    }
-  };
+  // Document-level event listeners for speed-up
+  useEffect(() => {
+    const handleDocumentMouseDown = () => {
+      if (isTyping) {
+        setIsSpedUp(true);
+      }
+    };
 
-  const handleMouseUp = () => {
-    setIsSpedUp(false);
-  };
+    const handleDocumentMouseUp = () => {
+      setIsSpedUp(false);
+    };
+
+    // Add event listeners to document
+    document.addEventListener('mousedown', handleDocumentMouseDown);
+    document.addEventListener('mouseup', handleDocumentMouseUp);
+    document.addEventListener('mouseleave', handleDocumentMouseUp);
+
+    // Cleanup function
+    return () => {
+      document.removeEventListener('mousedown', handleDocumentMouseDown);
+      document.removeEventListener('mouseup', handleDocumentMouseUp);
+      document.removeEventListener('mouseleave', handleDocumentMouseUp);
+    };
+  }, [isTyping]);
 
   // Reconstruct text with links for rendering
   const reconstructTextWithLinks = (animatedText: string, originalText: string) => {
@@ -119,58 +134,42 @@ const Terminal: React.FC<TerminalProps> = ({ command }) => {
   let location = useLocation();
   const paths = location.pathname.replace(/^\//, '').split('/');
 
+  const NavItem = (
+    <nav className="sticky top-0 z-20 bg-black/60 backdrop-blur-md border-b border-green-400/20 p-4">
+      <NavLink
+          to={BASE_COMMANDS.HOME}
+          className="text-xl hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
+      >
+          [ index ]
+      </NavLink>
+      {paths.map((dir, index) => {
+        return (
+          <div key={index} className="inline-block text-xl">
+            /
+            <NavLink
+              to={`/${paths.slice(0, index + 1).join('/')}`}
+              className="hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
+              >
+                [ {dir} ]
+            </NavLink>
+          </div>
+        )
+      })}
+    </nav>
+  )
+
   if (loading) {
     return (
-      <main className="flex-grow">
-        <nav className="mb-8 sticky top-0 bg-black/80">
-          <NavLink
-              to={BASE_COMMANDS.HOME}
-              className="text-xl hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
-          >
-              [ index ]
-          </NavLink>
-          {paths.map((dir, index) => {
-            return (
-              <div key={index} className="inline-block text-xl">
-                /
-                <NavLink
-                  to={`/${paths.slice(0, index + 1).join('/')}`}
-                  className="hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
-                  >
-                    [ {dir} ]
-                </NavLink>
-              </div>
-            )
-          })}
-        </nav>
-        <div className="text-lg">...</div>
+      <main className="flex-grow relative">
+        { NavItem }
+        <div className="text-lg pt-4 m-4 mx-auto max-w-3xl">...</div>
       </main>
     );
   }
 
   return (
-    <main className="flex-grow min-h-full">
-      <nav className="pb-8 sticky top-0 bg-black/80">
-        <NavLink
-            to={BASE_COMMANDS.HOME}
-            className="text-xl hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
-        >
-            [ index ]
-        </NavLink>
-        {paths.map((dir, index) => {
-          return (
-            <div key={index} className="inline-block text-xl">
-              /
-              <NavLink
-                to={`/${paths.slice(0, index + 1).join('/')}`}
-                className="hover:bg-green-400 hover:text-black focus:outline-none focus:bg-green-400 focus:text-black px-2 transition-colors duration-150"
-                >
-                  [ {dir} ]
-              </NavLink>
-            </div>
-          )
-        })}
-      </nav>
+    <main className="flex-grow min-h-full overflow-y-auto">
+      { NavItem }
 
 {isAIGhost ? (
   <>
@@ -178,10 +177,7 @@ const Terminal: React.FC<TerminalProps> = ({ command }) => {
         </>
       ) : (
         <div 
-          className="relative" 
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
+          className="relative pt-4 m-4 mx-auto max-w-3xl" 
         >
           <pre ref={textRef} className="whitespace-pre-wrap text-lg leading-relaxed break-all">
             {(() => {

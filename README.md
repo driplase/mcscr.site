@@ -4,7 +4,8 @@
 mcscr.site was gonna expire in under a week, and I thought "why can't I make some random websites?".\
 so I asked Gemini to make it.
 
-<small>but i thought it was mid, so i ended up editing this by myself & github copilot</small>
+<small>but i thought it was mid, so i ended up editing this by myself & github copilot\
+...cursor did most of it.</small>
 
 ## features
 tl;dr:

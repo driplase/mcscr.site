@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate, useLocation, useParams } fro
 import Header from './components/Header';
 import Terminal from './components/Terminal';
 import Footer from './components/Footer';
+import DynamicBackground from './components/DynamicBackground';
 import { BASE_COMMANDS } from './types';
 
 const TerminalPage = ({ command }: { command: string }) => {
@@ -36,8 +37,11 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="bg-black text-green-400 min-h-screen font-mono antialiased">
-        <div className="max-w-3xl w-full mx-auto p-4 md:p-8 min-h-screen">
+      <div className="bg-black text-green-400 min-h-screen font-mono antialiased relative">
+        {/* GSAP-powered Dynamic Background */}
+        <DynamicBackground />
+        
+        <div className="w-full mx-auto min-h-screen relative z-10">
           <Routes>
             <Route path={BASE_COMMANDS.HOME} element={<Header />} />
             <Route path={BASE_COMMANDS.ABOUT} element={<TerminalPage command={BASE_COMMANDS.ABOUT} />} />

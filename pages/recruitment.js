@@ -4,7 +4,7 @@ let text = [
   'Recruitment Information',
   '',
   '■ Registration',
-  '  To register recruitment information, please visit [link;https://discord.com/channels/888638910569206569/1223805848858529914;Discord Channel].',
+  '  To register recruitment information, please visit the [link;https://discord.com/channels/888638910569206569/1223805848858529914;Discord Channel].',
   '  Applications should be made individually to the recruiter.',
   '',
   '■ Current Recruitments',

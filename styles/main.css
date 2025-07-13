@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './animations.css';
 
 body {
   text-shadow: 0 0 8px;
