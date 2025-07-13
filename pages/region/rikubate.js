@@ -1,0 +1,25 @@
+let text = [
+  'Rikubate Town',
+  '',
+  '■ Region Information',
+  '  Region Name: Rikubate Town',
+  '  Manager: spacer4719',
+  '  Coordinates: -448 64 -448',
+  '  Overview: A new city with slightly poor access but combines freedom and lightness.',
+  '',
+  '■ Regulations',
+  '  • Construction of traps and items that use large amounts of land is prohibited.',
+  '  • Beacons must be removed within 3 days of construction.',
+  '  • Houses can be built freely, but construction can also be commissioned to spacer4719.',
+  '  • Unauthorized construction of underground houses, hideouts, and invisible buildings is prohibited.',
+  '  • Theft and similar actions are prohibited (if theft is discovered, expulsion from Rikubate Town will be ordered).',
+  '  • Construction of other buildings within others\' house premises is prohibited.',
+  '  • Please avoid interfering with villagers in Rikubate Town.',
+  '  • Please do not destroy the tree farm ruins.',
+  '',
+  '■ Discord Thread',
+  '  [link;https://discord.com/channels/888638910589206569/1222144213827715083;Rikubate Town Discussion]',
+  '',
+]
+
+export default text; 

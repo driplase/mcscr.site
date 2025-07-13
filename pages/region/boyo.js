@@ -1,0 +1,27 @@
+let text = [
+  'Boyo City',
+  '',
+  '■ Region Information',
+  '  Region Name: Boyo City',
+  '  Manager: ???',
+  '  Coordinates: -194 64 -799',
+  '  Overview: A northern port town with a balanced freedom and lightness.',
+  '',
+  '■ Regulations',
+  '  • Boyo City refers to all land areas of Boyo Island or sea areas within 50 blocks from the island\'s coastline.',
+  '  • Buildings can be constructed without permission in areas other than prohibited zones, as long as they don\'t disturb the landscape.',
+  '  • Traps cannot be built within Boyo City. They can be set up on neighboring Boyo Island or at sea without application.',
+  '  • Installation of beacons is generally prohibited.',
+  '  • Villagers in the trading post can be used freely with manager application, as long as other villagers are not released.',
+  '  • Players who violate server rules lose all rights in Boyo City and are ordered to leave the city.',
+  '',
+  '■ Prohibited Areas',
+  '  • The area marked in the image is a prohibited zone.',
+  '  • (1) The area surrounded by yellow lines in front of the station',
+  '',
+  '■ Discord Thread',
+  '  [link;https://discord.com/channels/888638910589206569/1220640506476888125;Boyo City Discussion]',
+  '',
+]
+
+export default text; 

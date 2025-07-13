@@ -1,0 +1,27 @@
+let text = [
+  'Aspou City',
+  '',
+  '■ Region Information',
+  '  Region Name: Aspou City',
+  '  Manager: aspou2413, Cuphead_sofu',
+  '  Coordinates: -510 66 -190',
+  '  Overview: The second largest emerging city after ScJP. Construction requires permission, but the beautiful streetscape is attractive.',
+  '',
+  '■ Regulations',
+  '  These regulations are in addition to ScJP Server rules.',
+  '  • Construction of roads and buildings without permission is prohibited.',
+  '  • Entering others\' homes without permission is prohibited.',
+  '  • Building construction requires application to either Cuphead_sofu or aspou2413.',
+  '  • For railways, only station construction application is required.',
+  '  • Building traps requires application to both Cuphead_sofu and aspou2413.',
+  '  • Items that make the server laggy (beacons, etc.) are generally prohibited.',
+  '  • The city may refuse acceptance in some cases.',
+  '  • Theft is absolutely prohibited and will result in expulsion from the city.',
+  '  • PvP should generally be done in the arena.',
+  '',
+  '■ Discord Thread',
+  '  [link;https://discord.com/channels/888638910589206569/1222141480596934717;Aspou City Discussion]',
+  '',
+]
+
+export default text; 

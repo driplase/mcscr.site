@@ -1,0 +1,96 @@
+[
+  {
+    "region": "ScJP City",
+    "facilities": [
+      {
+        "name": "Aspou Bank Head Office (001)",
+        "image": "/assets/facilities/aspoubank_001.png",
+        "url": "/facility/scjp/aspoubank_001"
+      },
+      {
+        "name": "ScJP 1st Anniversary Memorial Hall",
+        "image": "/assets/facilities/oneanv.png",
+        "url": "/facility/scjp/oneanv"
+      }
+    ]
+  },
+  {
+    "region": "Aspou City",
+    "facilities": []
+  },
+  {
+    "region": "Rampo City",
+    "facilities": []
+  },
+  {
+    "region": "Rikubate Town",
+    "facilities": [
+      {
+        "name": "Universal Tree Farm Ruins",
+        "image": "/assets/facilities/utf.png",
+        "url": "/facility/rikubate/utf"
+      }
+    ]
+  },
+  {
+    "region": "Boyo City",
+    "facilities": []
+  },
+  {
+    "region": "Jikki Town",
+    "facilities": []
+  },
+  {
+    "region": "ysTown",
+    "facilities": []
+  },
+  {
+    "region": "Suikelp Island",
+    "facilities": [
+      {
+        "name": "Creeper Farm",
+        "image": "/assets/facilities/suikelp/641.png",
+        "url": "/facility/suikelp/creeper_farm"
+      },
+      {
+        "name": "Tree Farm / Bone Meal Farm / Sky Trap Tower",
+        "image": "/assets/facilities/suikelp/642.png",
+        "url": "/facility/suikelp/tbmf"
+      },
+      {
+        "name": "Pumpkin Farm",
+        "image": "/assets/facilities/suikelp/643.png",
+        "url": "/facility/suikelp/pumpkin_farm"
+      },
+      {
+        "name": "Sugar Cane Farm",
+        "image": "/assets/facilities/suikelp/644.png",
+        "url": "/facility/suikelp/sugar_cane_farm"
+      },
+      {
+        "name": "Rail Farm",
+        "image": "/assets/facilities/suikelp/645.png",
+        "url": "/facility/suikelp/rail_farm"
+      },
+      {
+        "name": "Berry Farm",
+        "image": "/assets/facilities/suikelp/646.png",
+        "url": "/facility/suikelp/berry_farm"
+      },
+      {
+        "name": "Villager Duper",
+        "image": "/assets/facilities/suikelp/647.png",
+        "url": "/facility/suikelp/villager_duper"
+      },
+      {
+        "name": "Iron Farm",
+        "image": "/assets/facilities/suikelp/648.png",
+        "url": "/facility/suikelp/iron_farm"
+      }
+    ]
+  },
+  {
+    "region": "Nether Roof",
+    "facilities": []
+  }
+]

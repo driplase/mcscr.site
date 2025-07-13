@@ -1,0 +1,28 @@
+let text = [
+  'ArLgon Island',
+  '',
+  '■ Region Information',
+  '  Region Name: ArLgon Island',
+  '  Manager: Arlgon',
+  '  Coordinates: 3600 64 344',
+  '  Overview: A light villa area on the southern island. Regulations ensure no heavy causes in the island area, suitable for tourism.',
+  '',
+  '■ Regulations',
+  '  1. Construction on or in the central fissure requires consultation with Arlgon (used for tourism)',
+  '  2. Tree cutting and major terrain changes (basements are OK) require consultation',
+  '  3. For decorative planting, use naturally existing tree types as much as possible',
+  '  4. Traps and farms are generally prohibited',
+  '  5. Beacons also require consultation',
+  '  6. Building sense is not questioned, but build in non-intrusive positions to avoid breaking the tropical atmosphere',
+  '  7. Regulations may change arbitrarily based on situation and mood',
+  '  8-1. PvP is only allowed in permitted areas (arenas etc.) within the island. PvP in other areas resulting in death or fatal injury is considered harassment',
+  '  8-2. However, temporary permitted areas can be created by marking areas with signs etc. In that case, make time and location as clear as possible',
+  '  9. Other serious harassment will be judged by Arlgon or server staff for punishment and ban',
+  '  10. Content not in these regulations follows ScJP Server rules',
+  '',
+  '■ Discord Thread',
+  '  [link;https://discord.com/channels/888638910589206569/1220513219735588945;ArLgon Island Discussion]',
+  '',
+]
+
+export default text; 

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "ScJP City",
+    "image":    "/assets/scjp.png",
+    "nightimg": "/assets/scjp2.png",
+    "url": "/region/scjp"
+  },
+  {
+    "name": "Aspou City",
+    "image":    "/assets/aspou.png",
+    "nightimg": "/assets/aspou2.png",
+    "url": "/region/aspou"
+  },
+  {
+    "name": "Rampo City",
+    "image":    "/assets/ram3.png",
+    "nightimg": "/assets/ram.png",
+    "url": "/region/rampo"
+  },
+  {
+    "name": "Rikubate Town",
+    "image":    "/assets/rikubate2.png",
+    "nightimg": "/assets/rikubate.png",
+    "url": "/region/rikubate"
+  },
+  {
+    "name": "Boyo City",
+    "image":    "/assets/bouyou2.png",
+    "nightimg": "/assets/bouyou.png",
+    "url": "/region/boyo"
+  },
+  {
+    "name": "Jikki Village",
+    "image":    "/assets/jikkimura.png",
+    "nightimg": "/assets/jikky.png",
+    "url": "/region/jikky"
+  },
+  {
+    "name": "ysTown",
+    "image":    "/assets/ystown.png",
+    "url": "/region/ys"
+  },
+  {
+    "name": "Suikelp Island",
+    "image":    "/assets/suikelp.png",
+    "nightimg": "/assets/suikelp2.png",
+    "url": "/region/suikelp"
+  },
+  {
+    "name": "ArLgon Island",
+    "image":    "/assets/arlgonIsland.png",
+    "nightimg": "/assets/arlgon.png",
+    "url": "/region/arlgonIsland"
+  },
+  {
+    "name": "UXRCF City",
+    "image":    "/assets/uxrcf.png",
+    "nightimg": "/assets/uxrcf2.png",
+    "url": "/region/uxrcf"
+  },
+  {
+    "name": "Lin City",
+    "image":    "/assets/lin2.png",
+    "nightimg": "/assets/lin.png",
+    "url": "/region/lin"
+  },
+  {
+    "name": "Nether Roof",
+    "image":    "/assets/netherRoof.png",
+    "url": "/region/nether_roof"
+  }
+]
