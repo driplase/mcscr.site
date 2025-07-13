@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BASE_COMMANDS } from '../types';
-import { getPageContent } from '../constants';
+import { BASE_COMMANDS } from '../../types.ts';
+import { getPageContent } from '../constants.ts';
 import { useTypewriter, renderTextWithLinks } from '../hooks/useTypewriter.tsx';
-import BlinkingCursor from './BlinkingCursor';
+import BlinkingCursor from './BlinkingCursor.tsx';
 import { NavLink, useLocation } from "react-router";
 
 interface TerminalProps {

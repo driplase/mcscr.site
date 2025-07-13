@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Terminal from './components/Terminal';
 import Footer from './components/Footer';
 import DynamicBackground from './components/DynamicBackground';
-import { BASE_COMMANDS } from './types';
+import { BASE_COMMANDS } from '../types';
 
 const TerminalPage = ({ command }: { command: string }) => {
   return (

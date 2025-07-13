@@ -1,4 +1,4 @@
-import { BASE_COMMANDS } from './types';
+import { BASE_COMMANDS } from '../types';
 
 export const ASCII_LOGO = `
   ███╗  ███╗ ███████╗ ███████╗ ███████╗ ██████╗      ███████╗ ██████╗ ████████╗ ███████╗
