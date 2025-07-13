@@ -1,4 +1,4 @@
-import { BASE_COMMANDS } from '../types';
+import { BASE_COMMANDS } from './types';
 
 export const ASCII_LOGO = `
   ███╗  ███╗ ███████╗ ███████╗ ███████╗ ██████╗      ███████╗ ██████╗ ████████╗ ███████╗
@@ -6,7 +6,7 @@ export const ASCII_LOGO = `
   ██╔███╗██║ ██║      ███████╗ ██║      ██████╔╝     ███████╗   ██║      ██║    ███████╗
   ██║╚══╝██║ ██║      ╚════██║ ██║      ██╔══██╗     ╚════██║   ██║      ██║    ██╔════╝
   ██║    ██║ ███████╗ ███████║ ███████╗ ██║  ██║ ██╗ ███████║ ██████╗    ██║    ███████╗
-  ╚═╝    ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝ ╚═╝ ╚══════╝ ╚═════╝    ╚═╝    ╚══════╝
+  ╚═╝    ╚═╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝ ╚═╝ ╚══════╝ ╚═════╝    ╚═╝    ╚══════╝
 `;
 
 export const ASCII_LOGO_COMP = `
@@ -44,7 +44,7 @@ export const ASCII_LOGO_COMP = `
            ▓▓████▓▓█▓▓▓▓▓▓▓▓█▓▓█▓▓▓████▓▓▓▓▓▓▓▓▓█                      ▓█████▓▓▓▓▓████████▓█████████████████▓▓▓▓▓░              
            ▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓█████▓████▓██▓▓▓▓▓▓█▓█                      ▓█████▓▓▓████████▓█████████████████▓█▓▓████              
           ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                      ▓█████▓▓██████▓████████████████████████████              
-          ▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░    ▓█████▓██████████▓███████████████████████▓▓              
+          ▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░    ▓█████▓██████████▓███████████████████████▓▓              
           ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓█▓▓▓█▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓██▓▓█▓▓▓▓▓███▓█████████████████████████              
          ░▒▓▓▓▓▓▓▓▓▓▓▓████▓▓▓██▓▓▓▓▓▓▓▓▓▓▓████▓██▓▓▓▓▓▓▓▓▓▓██▓▓█▓▓▓▓▓▓▓▓▓████▓▓█▓▓▓▓████▓███▓█████▓███▓████▓▓▓▓▓▓▓▓             
          ▒▓▓▓▓▓▓▓▓▓████▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▓███▓▓▓▓██▓▓▓▓▓▓▓▓███▓█▓█▓▓▓▓▓▓▓███▓██▓▓▓▓▓▓█████▓▓▓▓██████▓█▓▓█████▓█▓▓▓▓██             
@@ -53,8 +53,8 @@ export const ASCII_LOGO_COMP = `
         ▒▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▓█▓▓█▓█████▓█▓▓▓▓▓▓▓█▓█▓█▓██▓▓▓▓▓▓▓▓█▓█▓▓▓█▓▓▓▓▓▓▓▓█▓▓██▓▓▓▓▓█▓███████▓▓██▓████▓▓████▓▓▓▓▓▓            
         ▓██████████▓▓▓▓███████▓█████████████████▓▓▓█▓██▓▓▓▓▓█████████████████▓▓█▓█▓▓▓▓███▓████▓▓▓██▓▓███▓███░░░░░ ░░            
         ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████████████▓▓▓▓▓▓▓▓▓▓██▓▓██▓▓▓▓██▓▓██▓▓▓██                    
-       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓███▓▓▓█▓▓▓▓▓▓▓▓█████████████████▓▓▓▓▓▓▓▓████▓██▓▓█████▓▓▓██████                    
-       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓█▓▓▓▓▓▓▓▓▓▓▓▓███████▓▓▓▓▓▓▓▓▓▓███████████████████▓▓▓▓▓▓██████▓▓▓▓██████▓▓▓█████▓░                   
+       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓█▓▓▓▓▓▓▓▓█████████████████▓▓▓▓▓▓▓▓████▓██▓▓█████▓▓▓██████                    
+       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████▓▓▓▓▓▓▓▓▓▓███████████████████▓▓▓▓▓▓██████▓▓▓▓██████▓▓▓█████▓░                   
        ▒▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓███▓▓▓▓▓▓▓▓▓▓█████████▓▓▓▓▓▓▓▓████▓█▓██████████████▓▓▓▓██████▓█▓████████▓█▓█████▓▓▓                   
       ▒▓▓▓▓▓▓▓▓▓▓▓████▓▓▓▓▓██▓▓▓▓▓▓▓████████▓▓██▓▓▓▓▓███████▓▓▓██████████████▓▓▓█████▓▓▓█▓███████▓████████▓██                   
       ▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓█▓▓▓▓▓▓████████▓▓▓▓██▓▓█████████▓▓▓███████████████▓██████▓▓▓███████████████████▓▓▒                   
@@ -85,29 +85,42 @@ export const NAV_ITEMS = [
   BASE_COMMANDS.SERVER,
 ];
 
-// Dynamic content loader function
+// --- Dynamic content loader using import.meta.glob ---
+// This will import all .js files in src/pages and subfolders
+const pageModules = import.meta.glob('./pages/**/*.js');
+
+/**
+ * Loads the content for a given path by dynamically importing the corresponding page module.
+ * This works in both dev and production, and ensures all page modules are included in the bundle.
+ * @param path The route path (e.g. "/about", "/region/scjp")
+ * @returns The default export of the page module, or a fallback if not found.
+ */
 export async function getPageContent(path: string): Promise<string[]> {
-  try {
-    // Convert path to module path
-    const modulePath = path === '/' ? './pages/home' : `./pages${path}`;
-    const module = await import(modulePath);
-    console.log(module.default)
-    return module.default || [];
-  } catch (error) {
-    console.warn(`Page not found: ${path}`, error);
-    return [
-      'Page not found',
-      '',
-      `The page "${path}" could not be found.`,
-      '',
-      'Available pages:',
-      '  • [link;/;Home]',
-      '  • [link;/about;About]',
-      '  • [link;/region;Regions]',
-      '  • [link;/facility;Facilities]',
-      '  • [link;/railway;Railways]',
-      '  • [link;/recruitment;Recruitment]',
-      '  • [link;/server;Server]',
-    ];
+  // Map route path to module path
+  let modulePath = path === '/' ? './pages/home.js' : `./pages${path}.js`;
+  // Try exact match first
+  if (pageModules[modulePath]) {
+    const mod = await pageModules[modulePath]() as { default?: string[] };
+    return mod.default || [];
   }
+  // Try index.js for directory routes (e.g. /region/ -> /region/index.js)
+  if (pageModules[`./pages${path}/index.js`]) {
+    const mod = await pageModules[`./pages${path}/index.js`]() as { default?: string[] };
+    return mod.default || [];
+  }
+  // fallback
+  return [
+    'Page not found',
+    '',
+    `The page "${path}" could not be found.`,
+    '',
+    'Available pages:',
+    '  • [link;/;Home]',
+    '  • [link;/about;About]',
+    '  • [link;/region;Regions]',
+    '  • [link;/facility;Facilities]',
+    '  • [link;/railway;Railways]',
+    '  • [link;/recruitment;Recruitment]',
+    '  • [link;/server;Server]',
+  ];
 }
